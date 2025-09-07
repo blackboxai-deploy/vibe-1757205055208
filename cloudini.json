@@ -1,0 +1,39 @@
+{
+"AWSTemplateFormatVersion": "2010-09-09",
+    "Description": "Infraestructure deployment",
+    "Metadata": {
+
+    },
+    "Parameters": {
+    
+    },
+    "Mappings": {
+
+    },
+    "Conditions": {
+
+    },
+    "Resources": {
+        "LogsBucket": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+                "AccessControl": "LogDeliveryWrite"
+            }
+        },
+        "DeployBucket": {
+            "Type": "AWS::S3::Bucket"
+        },
+        "BackupBucket": {
+            "Type": "AWS::S3::Bucket"
+        }        
+    },
+    "Outputs": {
+        
+        "LogsBucketName" : {
+          "Value" : !
+          { "Ref": "logicalName" }
+          -
+        }
+        
+    }
+}
