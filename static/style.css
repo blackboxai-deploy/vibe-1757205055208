@@ -1,0 +1,239 @@
+/* Estilos customizados para o sistema MDM */
+
+/* Melhorar aparência dos formulários */
+.stSelectbox > div > div {
+    background-color: #f8f9fa;
+}
+
+.stTextInput > div > div > input {
+    background-color: #f8f9fa;
+}
+
+.stTextArea > div > div > textarea {
+    background-color: #f8f9fa;
+}
+
+/* Estilo para métricas do dashboard */
+.metric-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.metric-value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.metric-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Estilo para alertas de duplicatas */
+.duplicate-alert {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.duplicate-group {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Estilo para botões de ação */
+.action-button {
+    margin: 5px;
+    padding: 8px 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+/* Estilo para tabelas */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.data-table th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+}
+
+.data-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Estilo para cards de informação */
+.info-card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    color: #495057;
+    margin-top: 0;
+}
+
+/* Estilo para o sidebar */
+.sidebar-content {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para status badges */
+.status-active {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+.status-inactive {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.875rem;
+}
+
+/* Estilo para logs de auditoria */
+.audit-log {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.audit-operation-insert {
+    border-left-color: #28a745;
+}
+
+.audit-operation-update {
+    border-left-color: #ffc107;
+}
+
+.audit-operation-delete {
+    border-left-color: #dc3545;
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .metric-card {
+        margin-bottom: 15px;
+    }
+    
+    .data-table {
+        font-size: 0.875rem;
+    }
+    
+    .info-card {
+        padding: 15px;
+        margin: 10px 0;
+    }
+}
+
+/* Animações suaves */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilo para upload de arquivos */
+.upload-zone {
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    background-color: #f8f9ff;
+    margin: 20px 0;
+}
+
+.upload-zone:hover {
+    background-color: #e6f3ff;
+}
+
+/* Estilo para resultados de busca */
+.search-result {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: white;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-result:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.search-highlight {
+    background-color: #fff3cd;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Cores personalizadas para diferentes tipos de registros */
+.cliente-card {
+    border-left: 4px solid #007bff;
+}
+
+.produto-card {
+    border-left: 4px solid #28a745;
+}
+
+.fornecedor-card {
+    border-left: 4px solid #ffc107;
+}
