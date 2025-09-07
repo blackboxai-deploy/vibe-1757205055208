@@ -1,0 +1,27 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Infraestructure deployment
+Resources: 
+  LogsBucket:
+    Type: AWS::S3::Bucket
+    Properties: 
+      AccessControl: LogDeliveryWrite
+  DeployBucket:
+    Type: AWS::S3::Bucket
+  BackupBucket:
+    Type: AWS::S3::Bucket 
+Outputs:
+  LogsBucketName:
+    Description: Bucket to store logging in general
+    Value: !Ref LogsBucket
+    Export: 
+      Name: !Sub ${AWS::StackName}-LogsBucketName
+  DeployBucketName:
+    Description: Bucket to store deployment artifacts
+    Value: !Ref DeployBucket
+    Export:
+      Name: !Sub ${AWS::StackName}-DeployBucketName
+  BackupBucketName:
+    Description: Bucket to store RDS or any other backup
+    Value: !Ref BackupBucket
+    Export:
+      Name: !Sub ${AWS::StackName}-BackupBucketName     
